@@ -34,7 +34,7 @@ export default function Main() {
         handlePageChange={handlePageChange}
       />
       <Header />
-      {renderPage}
+      {renderPage()}
       <Footer />
     </Fragment>
   );
