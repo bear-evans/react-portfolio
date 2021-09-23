@@ -1,21 +1,27 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Navigation from "./Navigation";
 
-export default function Header() {
+export default function Header({ currentPage, handlePageChange }) {
   const headerStyles = {
     backgroundImage: `url("./images/header-background.jpg")`,
     backgroundSize: "cover",
-    height: "80vh",
+    height: "50vh",
     textAlign: "center",
-    paddingTop: "10vh",
     fontFamily: "Impact, Serif",
     fontSize: "10em",
     color: "silver",
   };
 
   return (
-    <div className="bg-dark rounded-lg" style={headerStyles}>
-      <span style={{ paddingRight: "5em" }}>Hi,</span>
-      <br /> I'm <span style={{ color: "white" }}>Bear</span>
-    </div>
+    <Fragment>
+      <div className="bg-dark rounded-lg" style={headerStyles}>
+        <span style={{ paddingRight: "5em" }}>Hi,</span>
+        <br /> I'm <span style={{ color: "white" }}>Bear</span>
+      </div>
+      <Navigation
+        currentPage={currentPage}
+        handlePageChange={handlePageChange}
+      />
+    </Fragment>
   );
 }

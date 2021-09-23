@@ -1,5 +1,4 @@
 import React, { useState, Fragment } from "react";
-import Navigation from "./Navigation";
 import Header from "./Header";
 import Footer from "./Footer";
 import About from "./pages/About";
@@ -29,12 +28,8 @@ export default function Main() {
 
   return (
     <Fragment>
-      <Navigation
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
-      />
-      <Header />
-      {renderPage()}
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      <div className="container mt-3">{renderPage()}</div>
       <Footer />
     </Fragment>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Navigation({ currentPage, handlePageChange }) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark flex-row-reverse">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-evenly">
       <ul className="navbar-nav nav mr-auto">
         <li className="nav-item">
           <a
