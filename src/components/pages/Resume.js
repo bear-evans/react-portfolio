@@ -8,7 +8,7 @@ export default function Resume() {
       <div class="container d-flex justify-content-around">
         <a
           id="resume-button"
-          class="button"
+          class="btn btn-primary"
           href="https://bear-evans.github.io/portfolio/assets/Resume.pdf"
         >
           <span class="icon">
