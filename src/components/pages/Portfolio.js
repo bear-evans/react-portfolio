@@ -32,12 +32,12 @@ export default function Portfolio() {
           demo="https://bear-dm-helper.herokuapp.com/"
         />
         <Project
-          title=""
-          imgUrl=""
-          imgAlt=""
-          description=""
-          github=""
-          demo=""
+          title="Bear's Animal Facts"
+          imgUrl="https://bear-evans.github.io/portfolio/assets/images/cards/animal-quiz.jpg"
+          imgAlt="Bear's Animal Facts"
+          description="A light-hearted quiz about animals, running entirely with Javascript."
+          github="https://github.com/bear-evans/animal-quiz"
+          demo="https://bear-evans.github.io/animal-quiz/"
         />
       </div>
     </Fragment>
