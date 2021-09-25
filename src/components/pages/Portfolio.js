@@ -6,7 +6,7 @@ export default function Portfolio() {
     <Fragment>
       <h2>Portfolio</h2>
       <p>A curated list of my past projects.</p>
-      <div className="container">
+      <div className="container d-flex">
         <Project
           title="Bearpress"
           imgUrl="https://bear-evans.github.io/portfolio/assets/images/cards/bearpress.jpg"
